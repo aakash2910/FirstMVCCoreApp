@@ -15,6 +15,10 @@ namespace FirstMVCCoreApp.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Message"] = "\tThis data is from Controller.";
+            string[] names = { "aakash", "ravi", "temp"};
+            ViewData["Names"] = names;
+            
             return View();
         }
 

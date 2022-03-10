@@ -5,4 +5,12 @@
 <div class="text-center">
     <h1 class="display-4">Welcome Aakash</h1>
     <p>Learn more about<a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    @{
+        foreach(string name in (string[])ViewData["Names"])
+        {
+            <h2>@name</h2>
+        }
+    }
+
 </div>
