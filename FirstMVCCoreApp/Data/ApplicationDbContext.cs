@@ -8,5 +8,8 @@ namespace FirstMVCCoreApp.Models.Data
         {
 
         }
+
+        // Create table named Categories in DB 
+        public DbSet<Category> Categories { get; set; }
     }
 }
